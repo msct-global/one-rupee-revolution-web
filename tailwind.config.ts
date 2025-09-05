@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'inter': ['Inter', 'sans-serif'],
+				'playfair': ['Playfair Display', 'serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +65,29 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// NGO Brand Colors
+				'cream': 'hsl(var(--cream))',
+				'beige': 'hsl(var(--beige))',
+				'lavender': 'hsl(var(--lavender))',
+				'sage-green': 'hsl(var(--sage-green))',
+				'coral-glow': 'hsl(var(--coral-glow))',
+				'deep-indigo': 'hsl(var(--deep-indigo))',
+				'golden-wheat': 'hsl(var(--golden-wheat))'
+			},
+			backgroundImage: {
+				'hero-gradient': 'var(--hero-gradient)',
+				'sustainability-gradient': 'var(--sustainability-gradient)',
+				'trust-gradient': 'var(--trust-gradient)',
+			},
+			boxShadow: {
+				'soft': 'var(--shadow-soft)',
+				'medium': 'var(--shadow-medium)',
+				'strong': 'var(--shadow-strong)',
+			},
+			transitionTimingFunction: {
+				'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
+				'spring': 'cubic-bezier(0.175, 0.885, 0.32, 1.275)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
