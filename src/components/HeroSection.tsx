@@ -4,8 +4,27 @@ import heroImage from '@/assets/hero-image.jpg';
 
 const HeroSection = () => {
   return (
-    <section className="hero-section min-h-screen flex items-center">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <section className="hero-section min-h-screen flex items-center parallax-container">
+      {/* Parallax Background Layers */}
+      <div className="parallax-bg"></div>
+      
+      {/* Floating Donation Dots Animation */}
+      <div className="absolute inset-0 pointer-events-none">
+        {[...Array(8)].map((_, i) => (
+          <div
+            key={i}
+            className="floating-dots"
+            style={{
+              left: `${20 + i * 10}%`,
+              top: `${30 + (i % 3) * 20}%`,
+              animationDelay: `${i * 0.5}s`,
+              animationDuration: `${3 + i * 0.3}s`
+            }}
+          />
+        ))}
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="space-y-8">

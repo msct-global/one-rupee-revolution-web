@@ -66,7 +66,7 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// NGO Brand Colors
+				// Macaron-Inspired Brand Colors
 				'cream': 'hsl(var(--cream))',
 				'beige': 'hsl(var(--beige))',
 				'lavender': 'hsl(var(--lavender))',

@@ -7,14 +7,14 @@
 
 @layer base {
   :root {
-    /* NGO Brand Colors - Professional & Trustworthy */
-    --cream: 58 100% 91%;           /* #FFFDD0 - Backgrounds, text fields */
-    --beige: 60 56% 91%;            /* #F5F5DC - Cards, bases */
-    --lavender: 240 67% 94%;        /* #E6E6FA - Highlights, section dividers */
-    --sage-green: 100 11% 68%;      /* #A8B5A2 - Sustainability elements */
-    --coral-glow: 10 78% 79%;       /* #F4A59E - CTA buttons, donations */
-    --deep-indigo: 242 34% 42%;     /* #4B4A8F - Headers, strength, reliability */
-    --golden-wheat: 44 79% 53%;     /* #E8B923 - Accents, success stories */
+    /* Macaron-Inspired Brand Colors - Soft & Elegant */
+    --cream: 28 33% 97%;            /* #FAF7F0 - Pure macaron white */
+    --beige: 32 29% 92%;            /* #F7E7CE - Golden peachy undertones */
+    --lavender: 0 100% 100%;        /* #FFFFFF - Pure marble white */
+    --sage-green: 100 25% 40%;      /* #4A7C3A - Fresh strawberry leaves */
+    --coral-glow: 6 77% 64%;        /* #E85A4F - Vibrant strawberry coral */
+    --deep-indigo: 210 25% 25%;     /* #2F3B4A - Sophisticated charcoal */
+    --golden-wheat: 32 71% 89%;     /* #F7E7CE - Warm macaron gold */
 
     /* Semantic Design System */
     --background: var(--cream);
@@ -48,9 +48,13 @@
     --radius: 0.75rem;
 
     /* Brand-specific tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(var(--cream)), hsl(var(--coral-glow)));
+    --hero-gradient: linear-gradient(135deg, hsl(var(--cream)), hsl(var(--coral-glow) / 0.3));
     --sustainability-gradient: linear-gradient(135deg, hsl(var(--sage-green)), hsl(var(--beige)));
     --trust-gradient: linear-gradient(135deg, hsl(var(--deep-indigo)), hsl(var(--lavender)));
+    
+    /* Parallax animation gradients */
+    --parallax-gradient: linear-gradient(135deg, hsl(var(--cream)), hsl(var(--beige) / 0.8));
+    --floating-elements: linear-gradient(45deg, hsl(var(--coral-glow) / 0.1), hsl(var(--golden-wheat) / 0.1));
     
     /* Shadows for depth */
     --shadow-soft: 0 4px 20px hsl(var(--deep-indigo) / 0.08);
@@ -132,9 +136,27 @@
 }
 
 @layer components {
-  /* NGO-specific component styles */
+  /* Macaron-inspired component styles */
   .hero-section {
-    @apply bg-gradient-to-br from-cream to-coral-glow/20;
+    @apply relative overflow-hidden bg-gradient-to-br from-cream via-lavender to-coral-glow/10;
+    background-attachment: fixed;
+  }
+  
+  .parallax-bg {
+    @apply absolute inset-0 opacity-30;
+    background: var(--parallax-gradient);
+    animation: parallax-float 20s ease-in-out infinite;
+  }
+  
+  .floating-dots {
+    @apply absolute w-4 h-4 rounded-full;
+    background: hsl(var(--golden-wheat));
+    animation: float-up 3s ease-out;
+  }
+  
+  .growing-icon {
+    @apply transform transition-all duration-700 ease-out;
+    animation: grow-in 2s ease-out;
   }
   
   .impact-card {
@@ -198,4 +220,77 @@
   .shadow-soft { box-shadow: var(--shadow-soft); }
   .shadow-medium { box-shadow: var(--shadow-medium); }
   .shadow-strong { box-shadow: var(--shadow-strong); }
+  
+  /* Parallax and Animation Classes */
+  .parallax-container {
+    @apply relative overflow-hidden;
+    perspective: 1000px;
+  }
+  
+  .parallax-layer {
+    @apply absolute inset-0;
+    transform-style: preserve-3d;
+  }
+}
+
+/* Keyframe Animations */
+@keyframes parallax-float {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  33% { transform: translateY(-10px) scale(1.02); }
+  66% { transform: translateY(5px) scale(0.98); }
+}
+
+@keyframes float-up {
+  0% { 
+    opacity: 0; 
+    transform: translateY(50px) scale(0.8); 
+  }
+  50% { 
+    opacity: 1; 
+    transform: translateY(-20px) scale(1.1); 
+  }
+  100% { 
+    opacity: 0.8; 
+    transform: translateY(-100px) scale(1); 
+  }
+}
+
+@keyframes grow-in {
+  0% { 
+    opacity: 0; 
+    transform: scale(0.5) translateY(30px); 
+  }
+  60% { 
+    opacity: 0.8; 
+    transform: scale(1.1) translateY(-5px); 
+  }
+  100% { 
+    opacity: 1; 
+    transform: scale(1) translateY(0); 
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 20px hsl(var(--coral-glow) / 0.3); 
+  }
+  50% { 
+    box-shadow: 0 0 40px hsl(var(--coral-glow) / 0.6); 
+  }
+}
+
+@keyframes expand-impact {
+  0% { 
+    transform: scale(0) rotate(0deg); 
+    opacity: 0; 
+  }
+  50% { 
+    transform: scale(1.2) rotate(180deg); 
+    opacity: 0.8; 
+  }
+  100% { 
+    transform: scale(1) rotate(360deg); 
+    opacity: 1; 
+  }
+}
 }
