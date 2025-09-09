@@ -5,36 +5,36 @@ import rupeeIcon from '@/assets/rupee-revolution-icon.jpg';
 const RupeeRevolutionSection = () => {
   const impacts = [
     {
-      icon: <BookOpen className="h-6 w-6 text-sage-green" />,
+      icon: <BookOpen className="h-6 w-6 text-coral-blush" />,
       title: "₹1 = 1 Day of School",
       description: "Provide educational materials and support for a child's learning journey"
     },
     {
-      icon: <Stethoscope className="h-6 w-6 text-coral-glow" />,
+      icon: <Stethoscope className="h-6 w-6 text-strawberry-red" />,
       title: "₹1 = Health Check",
       description: "Basic health screening and preventive care for underprivileged communities"
     },
     {
-      icon: <TreePine className="h-6 w-6 text-sage-green" />,
+      icon: <TreePine className="h-6 w-6 text-coral-blush" />,
       title: "₹1 = Plant a Sapling",
       description: "Environmental conservation through tree plantation and sustainability projects"
     }
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-golden-wheat/10 via-cream to-coral-glow/10">
+    <section className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-golden-wheat/20 mb-6">
-            <img 
-              src={rupeeIcon} 
-              alt="₹1 Revolution Symbol" 
+          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-strawberry-pink/20 mb-6">
+            <img
+              src={rupeeIcon}
+              alt="₹1 Revolution Symbol"
               className="w-12 h-12 rounded-full"
             />
           </div>
-          
-          <h2 className="text-5xl font-playfair font-bold text-deep-indigo mb-6">
-            The ₹1 <span className="text-golden-wheat">Revolution</span>
+
+          <h2 className="text-5xl font-playfair font-bold text-deep-charcoal mb-6">
+            The ₹1 <span className="text-strawberry-red">Revolution</span>
           </h2>
           
           <p className="text-xl text-deep-indigo/80 max-w-4xl mx-auto leading-relaxed">
@@ -73,7 +73,7 @@ const RupeeRevolutionSection = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="bg-white rounded-2xl p-8 shadow-medium border border-lavender">
+          <div className="bg-white rounded-2xl p-8 shadow-medium border border-ivory">
             <div className="text-center mb-8">
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-coral-glow/20 mb-4">
                 <Coins className="h-8 w-8 text-coral-glow" />
@@ -103,7 +103,7 @@ const RupeeRevolutionSection = () => {
             </div>
 
             {/* Success Metrics */}
-            <div className="mt-8 pt-8 border-t border-lavender">
+            <div className="mt-8 pt-8 border-t border-ivory">
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
                   <div className="text-2xl font-bold text-golden-wheat">₹1L+</div>

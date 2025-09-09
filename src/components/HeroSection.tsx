@@ -29,14 +29,14 @@ const HeroSection = () => {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-6xl font-playfair font-bold text-deep-indigo leading-tight">
+              <h1 className="text-5xl lg:text-6xl font-playfair font-bold text-deep-charcoal leading-tight">
                 Service to Humanity is{' '}
-                <span className="text-golden-wheat">Service to God</span>
+                <span className="text-strawberry-red">Service to God</span>
               </h1>
-              
-              <p className="text-xl text-deep-indigo/80 leading-relaxed">
-                Join the <strong className="text-coral-glow">₹1 Revolution</strong> - 
-                where every single rupee creates lasting change through education, 
+
+              <p className="text-xl text-deep-charcoal/80 leading-relaxed">
+                Join the <strong className="text-strawberry-red">₹1 Revolution</strong> -
+                where every single rupee creates lasting change through education,
                 healthcare, and sustainability initiatives.
               </p>
             </div>
@@ -50,7 +50,7 @@ const HeroSection = () => {
               
               <Button 
                 variant="outline" 
-                className="border-deep-indigo text-deep-indigo hover:bg-deep-indigo hover:text-cream px-8 py-6 text-lg"
+                className="border-deep-charcoal text-deep-charcoal hover:bg-deep-charcoal hover:text-cream px-8 py-6 text-lg"
               >
                 Our Story
               </Button>
@@ -59,16 +59,16 @@ const HeroSection = () => {
             {/* Impact Stats Preview */}
             <div className="flex flex-wrap gap-8 pt-8">
               <div className="flex items-center space-x-2">
-                <Users className="h-6 w-6 text-sage-green" />
-                <span className="text-deep-indigo font-semibold">10,000+ Lives Touched</span>
+                <Users className="h-6 w-6 text-coral-blush" />
+                <span className="text-deep-charcoal font-semibold">10,000+ Lives Touched</span>
               </div>
               <div className="flex items-center space-x-2">
-                <GraduationCap className="h-6 w-6 text-golden-wheat" />
-                <span className="text-deep-indigo font-semibold">5,000+ Children Educated</span>
+                <GraduationCap className="h-6 w-6 text-strawberry-pink" />
+                <span className="text-deep-charcoal font-semibold">5,000+ Children Educated</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Heart className="h-6 w-6 text-coral-glow" />
-                <span className="text-deep-indigo font-semibold">₹1 = 1 Day of School</span>
+                <Heart className="h-6 w-6 text-strawberry-red" />
+                <span className="text-deep-charcoal font-semibold">₹1 = 1 Day of School</span>
               </div>
             </div>
           </div>
@@ -83,10 +83,10 @@ const HeroSection = () => {
               />
               
               {/* Floating Card */}
-              <div className="absolute -bottom-6 -left-6 bg-card p-6 rounded-xl shadow-medium border border-lavender">
+              <div className="absolute -bottom-6 -left-6 bg-card p-6 rounded-xl shadow-medium border border-ivory">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-golden-wheat">₹1</div>
-                  <div className="text-sm text-deep-indigo">Can change a life</div>
+                  <div className="text-3xl font-bold text-strawberry-red">₹1</div>
+                  <div className="text-sm text-deep-charcoal">Can change a life</div>
                 </div>
               </div>
             </div>

@@ -30,36 +30,36 @@ const GrowingImpactSection = () => {
       icon: <GraduationCap className="h-12 w-12" />,
       title: "Education",
       description: "Quality learning opportunities",
-      color: "text-sage-green",
-      bgColor: "bg-sage-green/10",
+      color: "text-coral-blush",
+      bgColor: "bg-coral-blush/10",
       delay: 0
     },
     {
       icon: <Stethoscope className="h-12 w-12" />,
-      title: "Healthcare", 
+      title: "Healthcare",
       description: "Free medical assistance",
-      color: "text-coral-glow",
-      bgColor: "bg-coral-glow/10",
+      color: "text-strawberry-red",
+      bgColor: "bg-strawberry-red/10",
       delay: 300
     },
     {
       icon: <Leaf className="h-12 w-12" />,
       title: "Sustainability",
       description: "Environmental conservation",
-      color: "text-sage-green",
-      bgColor: "bg-sage-green/10", 
+      color: "text-coral-blush",
+      bgColor: "bg-coral-blush/10",
       delay: 600
     }
   ];
 
   return (
-    <section id="growing-impact" className="py-20 bg-gradient-to-b from-lavender to-cream">
+    <section id="growing-impact" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-playfair font-bold text-deep-indigo mb-6">
+          <h2 className="text-4xl font-playfair font-bold text-deep-charcoal mb-6">
             Watch Your ₹1 Grow Into Impact
           </h2>
-          <p className="text-xl text-deep-indigo/70 max-w-3xl mx-auto">
+          <p className="text-xl text-deep-charcoal/70 max-w-3xl mx-auto">
             Every donation starts as a single rupee and multiplies into lasting change across communities.
           </p>
         </div>
@@ -114,13 +114,13 @@ const GrowingImpactSection = () => {
                     {item.icon}
                   </div>
                 </div>
-                <h3 className="text-2xl font-playfair font-semibold text-deep-indigo mb-3">
+                <h3 className="text-2xl font-playfair font-semibold text-deep-charcoal mb-3">
                   {item.title}
                 </h3>
-                <p className="text-deep-indigo/70 mb-4">
+                <p className="text-deep-charcoal/70 mb-4">
                   {item.description}
                 </p>
-                <div className="flex items-center justify-center space-x-2 text-coral-glow font-semibold">
+                <div className="flex items-center justify-center space-x-2 text-strawberry-red font-semibold">
                   <span>₹1 = 1 Day Impact</span>
                   <ArrowRight className="h-4 w-4" />
                 </div>

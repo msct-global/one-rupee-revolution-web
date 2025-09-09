@@ -1,0 +1,18 @@
+Cream (#FAF8F5) - Pure cream macaron shell
+Vanilla (#F5F2ED) - Soft vanilla undertone
+Warm Beige (#E8E2D8) - Warm beige macaron
+Caramel (#C9B896) - Rich caramel accent
+Golden Cream (#DDD4C0) - Golden cream highlight
+Soft Taupe (#A8A199) - Elegant soft taupe
+Warm Brown (#5C5248) - Warm brown for text
+
+
+
+
+Purple (#A084CA) - Primary color for macaron shells, buttons, and accents
+Lavender (#D7B9D5) - Secondary color for highlights and hover states
+Cream (#F5E8C7) - Card backgrounds and macaron filling color
+Gray (#D3D3D3) - Borders and muted elements from stone surface
+Beige (#F5F1E9) - Main background color from wooden texture
+Deep Purple (#6B5A8A) - Text color and darker accents
+Soft Lavender (#E8E0E6) - Very light backgrounds and subtle elements

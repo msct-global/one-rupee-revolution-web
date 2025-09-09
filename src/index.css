@@ -1,65 +1,65 @@
+/* Manav Seva Charitable Trust Design System - Vanilla Macaron Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Manav Seva Charitable Trust Design System - Professional NGO Theme */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
-
 @layer base {
   :root {
-    /* Macaron-Inspired Brand Colors - Soft & Elegant */
-    --cream: 28 33% 97%;            /* #FAF7F0 - Pure macaron white */
-    --beige: 32 29% 92%;            /* #F7E7CE - Golden peachy undertones */
-    --lavender: 0 100% 100%;        /* #FFFFFF - Pure marble white */
-    --sage-green: 100 25% 40%;      /* #4A7C3A - Fresh strawberry leaves */
-    --coral-glow: 6 77% 64%;        /* #E85A4F - Vibrant strawberry coral */
-    --deep-indigo: 210 25% 25%;     /* #2F3B4A - Sophisticated charcoal */
-    --golden-wheat: 32 71% 89%;     /* #F7E7CE - Warm macaron gold */
+    /* Vanilla Macaron-Inspired Brand Colors - Warm & Sophisticated */
+    --cream: 45 25% 97%;            /* #FAF8F5 - Pure cream macaron shell */
+    --vanilla: 42 20% 94%;          /* #F5F2ED - Soft vanilla undertone */
+    --warm-beige: 38 15% 88%;       /* #E8E2D8 - Warm beige macaron */
+    --caramel: 35 25% 75%;          /* #C9B896 - Rich caramel accent */
+    --golden-cream: 40 30% 85%;     /* #DDD4C0 - Golden cream highlight */
+    --soft-taupe: 30 8% 65%;        /* #A8A199 - Elegant soft taupe */
+    --warm-brown: 25 15% 35%;       /* #5C5248 - Warm brown for text */
 
     /* Semantic Design System */
-    --background: var(--cream);
-    --foreground: var(--deep-indigo);
+    --background: linear-gradient(135deg, hsl(var(--warm-beige)), hsl(var(--golden-cream) / 0.5), hsl(var(--caramel) / 0.22));
+    --foreground: var(--warm-brown);
 
-    --card: var(--beige);
-    --card-foreground: var(--deep-indigo);
+    --card: var(--vanilla);
+    --card-foreground: var(--warm-brown);
 
-    --popover: var(--cream);
-    --popover-foreground: var(--deep-indigo);
+    --popover: var(--vanilla);
+    --popover-foreground: var(--warm-brown);
 
-    --primary: var(--deep-indigo);
+    --primary: var(--caramel);
     --primary-foreground: var(--cream);
 
-    --secondary: var(--sage-green);
-    --secondary-foreground: var(--cream);
+    --secondary: var(--warm-beige);
+    --secondary-foreground: var(--warm-brown);
 
-    --muted: var(--beige);
-    --muted-foreground: 242 20% 60%;
+    --muted: var(--vanilla);
+    --muted-foreground: var(--soft-taupe);
 
-    --accent: var(--lavender);
-    --accent-foreground: var(--deep-indigo);
+    --accent: var(--golden-cream);
+    --accent-foreground: var(--warm-brown);
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: var(--caramel);
     --destructive-foreground: var(--cream);
 
-    --border: var(--lavender);
-    --input: var(--beige);
-    --ring: var(--coral-glow);
+    --border: var(--soft-taupe);
+    --input: var(--vanilla);
+    --ring: var(--caramel);
 
     --radius: 0.75rem;
 
     /* Brand-specific tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(var(--cream)), hsl(var(--coral-glow) / 0.3));
-    --sustainability-gradient: linear-gradient(135deg, hsl(var(--sage-green)), hsl(var(--beige)));
-    --trust-gradient: linear-gradient(135deg, hsl(var(--deep-indigo)), hsl(var(--lavender)));
-    
+    --hero-gradient: linear-gradient(135deg, hsl(var(--cream)), hsl(var(--golden-cream) / 0.4));
+    --sustainability-gradient: linear-gradient(135deg, hsl(var(--caramel)), hsl(var(--vanilla)));
+    --trust-gradient: linear-gradient(135deg, hsl(var(--warm-brown)), hsl(var(--caramel) / 0.3));
+
     /* Parallax animation gradients */
-    --parallax-gradient: linear-gradient(135deg, hsl(var(--cream)), hsl(var(--beige) / 0.8));
-    --floating-elements: linear-gradient(45deg, hsl(var(--coral-glow) / 0.1), hsl(var(--golden-wheat) / 0.1));
+    --parallax-gradient: linear-gradient(135deg, hsl(var(--cream)), hsl(var(--golden-cream) / 0.5));
+    --floating-elements: linear-gradient(45deg, hsl(var(--golden-cream) / 0.3), hsl(var(--warm-beige) / 0.2));
     
     /* Shadows for depth */
-    --shadow-soft: 0 4px 20px hsl(var(--deep-indigo) / 0.08);
-    --shadow-medium: 0 8px 25px hsl(var(--deep-indigo) / 0.12);
-    --shadow-strong: 0 12px 40px hsl(var(--deep-indigo) / 0.16);
+    --shadow-soft: 0 4px 20px hsl(var(--warm-brown) / 0.08);
+    --shadow-medium: 0 8px 25px hsl(var(--warm-brown) / 0.12);
+    --shadow-strong: 0 12px 40px hsl(var(--warm-brown) / 0.16);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -127,7 +127,10 @@
   }
 
   body {
-    @apply bg-background text-foreground font-inter antialiased;
+    @apply text-foreground font-inter antialiased;
+    background: linear-gradient(135deg, hsl(var(--warm-beige)), hsl(var(--golden-cream) / 0.5), hsl(var(--caramel) / 0.22));
+    background-attachment: fixed;
+    min-height: 100vh;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -138,7 +141,7 @@
 @layer components {
   /* Macaron-inspired component styles */
   .hero-section {
-    @apply relative overflow-hidden bg-gradient-to-br from-cream via-lavender to-coral-glow/10;
+    @apply relative overflow-hidden bg-gradient-to-br from-warm-beige via-golden-cream/50 to-caramel/15;
     background-attachment: fixed;
   }
   
@@ -150,7 +153,8 @@
   
   .floating-dots {
     @apply absolute w-4 h-4 rounded-full;
-    background: hsl(var(--golden-wheat));
+    background: hsl(var(--golden-cream));
+    box-shadow: 0 0 10px hsl(var(--caramel) / 0.4);
     animation: float-up 3s ease-out;
   }
   
@@ -164,23 +168,24 @@
   }
   
   .donation-button {
-    @apply bg-coral-glow text-white hover:bg-coral-glow/90 font-semibold px-8 py-4 rounded-lg shadow-medium hover:shadow-strong transition-all duration-300 transform hover:scale-105;
+    @apply bg-caramel text-cream hover:bg-caramel/90 font-semibold px-8 py-4 rounded-lg shadow-medium hover:shadow-strong transition-all duration-300 transform hover:scale-105;
+    background: linear-gradient(135deg, hsl(var(--caramel)), hsl(var(--golden-cream)));
   }
   
   .sustainability-accent {
-    @apply text-sage-green border-sage-green bg-sage-green/10;
+    @apply text-caramel border-caramel bg-caramel/10;
   }
-  
+
   .success-highlight {
-    @apply text-golden-wheat border-golden-wheat bg-golden-wheat/10;
+    @apply text-caramel border-caramel bg-caramel/10;
   }
   
   .trust-section {
-    @apply bg-gradient-to-r from-deep-indigo/5 to-lavender/30;
+    @apply bg-gradient-to-r from-warm-brown/5 to-golden-cream/30;
   }
-  
+
   .section-divider {
-    @apply border-t border-lavender;
+    @apply border-t border-vanilla;
   }
 }
 
@@ -194,28 +199,28 @@
   }
   
   .text-cream { color: hsl(var(--cream)); }
-  .text-beige { color: hsl(var(--beige)); }
-  .text-lavender { color: hsl(var(--lavender)); }
-  .text-sage-green { color: hsl(var(--sage-green)); }
-  .text-coral-glow { color: hsl(var(--coral-glow)); }
-  .text-deep-indigo { color: hsl(var(--deep-indigo)); }
-  .text-golden-wheat { color: hsl(var(--golden-wheat)); }
+  .text-vanilla { color: hsl(var(--vanilla)); }
+  .text-warm-beige { color: hsl(var(--warm-beige)); }
+  .text-caramel { color: hsl(var(--caramel)); }
+  .text-golden-cream { color: hsl(var(--golden-cream)); }
+  .text-soft-taupe { color: hsl(var(--soft-taupe)); }
+  .text-warm-brown { color: hsl(var(--warm-brown)); }
   
   .bg-cream { background-color: hsl(var(--cream)); }
-  .bg-beige { background-color: hsl(var(--beige)); }
-  .bg-lavender { background-color: hsl(var(--lavender)); }
-  .bg-sage-green { background-color: hsl(var(--sage-green)); }
-  .bg-coral-glow { background-color: hsl(var(--coral-glow)); }
-  .bg-deep-indigo { background-color: hsl(var(--deep-indigo)); }
-  .bg-golden-wheat { background-color: hsl(var(--golden-wheat)); }
+  .bg-vanilla { background-color: hsl(var(--vanilla)); }
+  .bg-warm-beige { background-color: hsl(var(--warm-beige)); }
+  .bg-caramel { background-color: hsl(var(--caramel)); }
+  .bg-golden-cream { background-color: hsl(var(--golden-cream)); }
+  .bg-soft-taupe { background-color: hsl(var(--soft-taupe)); }
+  .bg-warm-brown { background-color: hsl(var(--warm-brown)); }
   
   .border-cream { border-color: hsl(var(--cream)); }
-  .border-beige { border-color: hsl(var(--beige)); }
-  .border-lavender { border-color: hsl(var(--lavender)); }
-  .border-sage-green { border-color: hsl(var(--sage-green)); }
-  .border-coral-glow { border-color: hsl(var(--coral-glow)); }
-  .border-deep-indigo { border-color: hsl(var(--deep-indigo)); }
-  .border-golden-wheat { border-color: hsl(var(--golden-wheat)); }
+  .border-vanilla { border-color: hsl(var(--vanilla)); }
+  .border-warm-beige { border-color: hsl(var(--warm-beige)); }
+  .border-caramel { border-color: hsl(var(--caramel)); }
+  .border-golden-cream { border-color: hsl(var(--golden-cream)); }
+  .border-soft-taupe { border-color: hsl(var(--soft-taupe)); }
+  .border-warm-brown { border-color: hsl(var(--warm-brown)); }
   
   .shadow-soft { box-shadow: var(--shadow-soft); }
   .shadow-medium { box-shadow: var(--shadow-medium); }
@@ -271,11 +276,11 @@
 }
 
 @keyframes pulse-glow {
-  0%, 100% { 
-    box-shadow: 0 0 20px hsl(var(--coral-glow) / 0.3); 
+  0%, 100% {
+    box-shadow: 0 0 20px hsl(var(--strawberry-red) / 0.3);
   }
-  50% { 
-    box-shadow: 0 0 40px hsl(var(--coral-glow) / 0.6); 
+  50% {
+    box-shadow: 0 0 40px hsl(var(--strawberry-red) / 0.6);
   }
 }
 

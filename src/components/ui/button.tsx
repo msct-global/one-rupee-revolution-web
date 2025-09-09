@@ -19,10 +19,10 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         // NGO-specific variants using design system
-        donate: "bg-coral-glow text-white hover:bg-coral-glow/90 font-semibold shadow-medium hover:shadow-strong transition-all duration-300 transform hover:scale-105",
-        hero: "bg-deep-indigo text-cream hover:bg-deep-indigo/90 font-semibold shadow-medium hover:shadow-strong transition-all duration-300",
-        sustainability: "bg-sage-green text-white hover:bg-sage-green/90 border border-sage-green",
-        success: "bg-golden-wheat text-deep-indigo hover:bg-golden-wheat/90 font-semibold",
+        donate: "bg-strawberry-red text-white hover:bg-strawberry-red/90 font-semibold shadow-medium hover:shadow-strong transition-all duration-300 transform hover:scale-105",
+        hero: "bg-deep-charcoal text-cream hover:bg-deep-charcoal/90 font-semibold shadow-medium hover:shadow-strong transition-all duration-300",
+        sustainability: "bg-coral-blush text-white hover:bg-coral-blush/90 border border-coral-blush",
+        success: "bg-strawberry-pink text-deep-charcoal hover:bg-strawberry-pink/90 font-semibold",
       },
       size: {
         default: "h-10 px-4 py-2",

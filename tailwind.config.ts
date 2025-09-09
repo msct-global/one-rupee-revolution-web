@@ -66,14 +66,14 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Macaron-Inspired Brand Colors
+				// Vanilla Macaron-Inspired Brand Colors
 				'cream': 'hsl(var(--cream))',
-				'beige': 'hsl(var(--beige))',
-				'lavender': 'hsl(var(--lavender))',
-				'sage-green': 'hsl(var(--sage-green))',
-				'coral-glow': 'hsl(var(--coral-glow))',
-				'deep-indigo': 'hsl(var(--deep-indigo))',
-				'golden-wheat': 'hsl(var(--golden-wheat))'
+				'vanilla': 'hsl(var(--vanilla))',
+				'warm-beige': 'hsl(var(--warm-beige))',
+				'caramel': 'hsl(var(--caramel))',
+				'golden-cream': 'hsl(var(--golden-cream))',
+				'soft-taupe': 'hsl(var(--soft-taupe))',
+				'warm-brown': 'hsl(var(--warm-brown))'
 			},
 			backgroundImage: {
 				'hero-gradient': 'var(--hero-gradient)',

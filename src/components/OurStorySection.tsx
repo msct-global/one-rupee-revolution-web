@@ -27,7 +27,7 @@ const OurStorySection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-cream via-beige/50 to-lavender/30">
+    <section className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Story Content */}
@@ -106,11 +106,11 @@ const OurStorySection = () => {
             />
             
             {/* Overlay Card */}
-            <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-xl shadow-strong border border-lavender max-w-xs">
+            <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-xl shadow-strong border border-ivory max-w-xs">
               <div className="text-center">
-                <div className="text-3xl font-bold text-deep-indigo mb-2">Founded in</div>
-                <div className="text-4xl font-playfair font-bold text-golden-wheat mb-2">2020</div>
-                <div className="text-sm text-deep-indigo/70">
+                <div className="text-3xl font-bold text-deep-charcoal mb-2">Founded in</div>
+                <div className="text-4xl font-playfair font-bold text-strawberry-red mb-2">2020</div>
+                <div className="text-sm text-deep-charcoal/70">
                   With a vision to serve humanity through compassionate action
                 </div>
               </div>

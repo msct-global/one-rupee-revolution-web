@@ -3,52 +3,52 @@ import { GraduationCap, Heart, Stethoscope, Leaf, Users, TrendingUp } from 'luci
 const ImpactStats = () => {
   const stats = [
     {
-      icon: <GraduationCap className="h-8 w-8 text-sage-green" />,
+      icon: <GraduationCap className="h-8 w-8 text-coral-blush" />,
       number: "5,000+",
       label: "Children Educated",
       description: "Quality learning opportunities provided",
-      bgColor: "bg-sage-green/10",
-      borderColor: "border-sage-green"
+      bgColor: "bg-coral-blush/10",
+      borderColor: "border-coral-blush"
     },
     {
-      icon: <Stethoscope className="h-8 w-8 text-coral-glow" />,
+      icon: <Stethoscope className="h-8 w-8 text-strawberry-red" />,
       number: "50,000+",
       label: "Health Consultations",
       description: "Free medical camps & assistance",
-      bgColor: "bg-coral-glow/10",
-      borderColor: "border-coral-glow"
+      bgColor: "bg-strawberry-red/10",
+      borderColor: "border-strawberry-red"
     },
     {
-      icon: <Leaf className="h-8 w-8 text-sage-green" />,
+      icon: <Leaf className="h-8 w-8 text-coral-blush" />,
       number: "100+",
       label: "Green Projects",
       description: "Environmental conservation initiatives",
-      bgColor: "bg-sage-green/10",
-      borderColor: "border-sage-green"
+      bgColor: "bg-coral-blush/10",
+      borderColor: "border-coral-blush"
     },
     {
-      icon: <Users className="h-8 w-8 text-deep-indigo" />,
+      icon: <Users className="h-8 w-8 text-deep-charcoal" />,
       number: "10,000+",
       label: "Lives Touched",
       description: "Direct beneficiaries of our programs",
-      bgColor: "bg-deep-indigo/10",
-      borderColor: "border-deep-indigo"
+      bgColor: "bg-deep-charcoal/10",
+      borderColor: "border-deep-charcoal"
     },
     {
-      icon: <Heart className="h-8 w-8 text-coral-glow" />,
+      icon: <Heart className="h-8 w-8 text-strawberry-red" />,
       number: "₹1,00,000+",
       label: "₹1 Donations",
       description: "Collective micro-donations received",
-      bgColor: "bg-golden-wheat/10",
-      borderColor: "border-golden-wheat"
+      bgColor: "bg-strawberry-pink/10",
+      borderColor: "border-strawberry-pink"
     },
     {
-      icon: <TrendingUp className="h-8 w-8 text-golden-wheat" />,
+      icon: <TrendingUp className="h-8 w-8 text-strawberry-pink" />,
       number: "95%",
       label: "Impact Rate",
       description: "Funds directly reaching beneficiaries",
-      bgColor: "bg-golden-wheat/10",
-      borderColor: "border-golden-wheat"
+      bgColor: "bg-strawberry-pink/10",
+      borderColor: "border-strawberry-pink"
     }
   ];
 
@@ -76,13 +76,13 @@ const ImpactStats = () => {
                   {stat.icon}
                 </div>
                 <div className="flex-1">
-                  <div className="text-3xl font-bold text-deep-indigo mb-1">
+                  <div className="text-3xl font-bold text-deep-charcoal mb-1">
                     {stat.number}
                   </div>
-                  <div className="text-lg font-semibold text-deep-indigo mb-2">
+                  <div className="text-lg font-semibold text-deep-charcoal mb-2">
                     {stat.label}
                   </div>
-                  <div className="text-deep-indigo/70">
+                  <div className="text-deep-charcoal/70">
                     {stat.description}
                   </div>
                 </div>
@@ -93,11 +93,11 @@ const ImpactStats = () => {
 
         {/* CTA Section */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-coral-glow/20 to-golden-wheat/20 rounded-2xl p-8 shadow-medium">
-            <h3 className="text-2xl font-playfair font-bold text-deep-indigo mb-4">
+          <div className="bg-gradient-to-r from-strawberry-red/20 to-strawberry-pink/20 rounded-2xl p-8 shadow-medium">
+            <h3 className="text-2xl font-playfair font-bold text-deep-charcoal mb-4">
               Ready to multiply these numbers?
             </h3>
-            <p className="text-deep-indigo/80 mb-6">
+            <p className="text-deep-charcoal/80 mb-6">
               Your ₹1 can be the catalyst that changes someone's life forever.
             </p>
             <button className="donation-button">
