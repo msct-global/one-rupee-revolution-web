@@ -10,8 +10,7 @@ const Navigation = () => {
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
     { name: 'Our Impact', path: '/impact' },
-    { name: '₹1 Revolution', path: '/revolution' },
-    { name: 'Get Involved', path: '/get-involved' },
+    { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/contact' },
   ];
 
