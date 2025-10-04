@@ -39,7 +39,7 @@ const OurStorySection = () => {
               
               <div className="space-y-6 text-deep-indigo/80 leading-relaxed">
                 <p className="text-lg">
-                  Founded on the belief that <strong className="text-deep-indigo">service to humanity is service to God</strong>, 
+                  Founded on the belief that <strong className="text-deep-indigo">small donations could create big 'Miracles'</strong>, 
                   Manav Seva Charitable Trust began as a small initiative to provide food and clothing 
                   to underprivileged communities.
                 </p>
@@ -104,17 +104,6 @@ const OurStorySection = () => {
               alt="Manav Seva volunteers helping community members"
               className="rounded-2xl shadow-strong w-full h-[600px] object-cover"
             />
-            
-            {/* Overlay Card */}
-            <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-xl shadow-strong border border-ivory max-w-xs">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-deep-charcoal mb-2">Founded in</div>
-                <div className="text-4xl font-playfair font-bold text-strawberry-red mb-2">2020</div>
-                <div className="text-sm text-deep-charcoal/70">
-                  With a vision to serve humanity through compassionate action
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 

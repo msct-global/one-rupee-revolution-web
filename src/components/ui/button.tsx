@@ -13,16 +13,16 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+          "border border-input bg-background hover:bg-accent hover:text-warm-brown",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
+        ghost: "hover:bg-accent hover:text-warm-brown",
         link: "text-primary underline-offset-4 hover:underline",
-        // NGO-specific variants using design system
-        donate: "bg-strawberry-red text-white hover:bg-strawberry-red/90 font-semibold shadow-medium hover:shadow-strong transition-all duration-300 transform hover:scale-105",
-        hero: "bg-deep-charcoal text-cream hover:bg-deep-charcoal/90 font-semibold shadow-medium hover:shadow-strong transition-all duration-300",
-        sustainability: "bg-coral-blush text-white hover:bg-coral-blush/90 border border-coral-blush",
-        success: "bg-strawberry-pink text-deep-charcoal hover:bg-strawberry-pink/90 font-semibold",
+        // NGO-specific variants using vanilla macaron design system
+        donate: "bg-caramel text-cream hover:bg-caramel/90 font-semibold shadow-medium hover:shadow-strong transition-all duration-300 transform hover:scale-105",
+        hero: "bg-warm-brown text-cream hover:bg-warm-brown/90 font-semibold shadow-medium hover:shadow-strong transition-all duration-300",
+        sustainability: "bg-golden-cream text-warm-brown hover:bg-golden-cream/90 border border-golden-cream",
+        success: "bg-vanilla text-warm-brown hover:bg-vanilla/90 font-semibold",
       },
       size: {
         default: "h-10 px-4 py-2",

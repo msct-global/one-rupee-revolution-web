@@ -27,17 +27,23 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 min-w-0">
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-6xl font-playfair font-bold text-deep-charcoal leading-tight">
-                Service to Humanity is{' '}
-                <span className="text-strawberry-red">Service to God</span>
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-playfair font-bold text-warm-brown leading-tight">
+                <div className="break-words">
+                  One Community, Countless Possibilities
+                </div>
+                <div className="text-caramel break-words">
+                  <span className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl">Where Humanity</span><br />
+                  <span className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl">Finds Its Voice</span>
+                </div>
               </h1>
 
-              <p className="text-xl text-deep-charcoal/80 leading-relaxed">
-                Join the <strong className="text-strawberry-red">₹1 Revolution</strong> -
+              <p className="text-xl text-warm-brown/80 leading-relaxed">
+              Every moment you wait, someone else struggles in silence. <strong className="text-strawberry-red">If not you, then who?</strong> Your support today can turn their story around — giving them the chance they need, the voice they deserve. Don’t let another opportunity slip by. Stand with us and make a real, lasting impact.
+                {/* Join the <strong className="text-strawberry-red">₹1 Revolution</strong> -
                 where every single rupee creates lasting change through education,
-                healthcare, and sustainability initiatives.
+                healthcare, and sustainability initiatives. */}
               </p>
             </div>
 
@@ -48,9 +54,9 @@ const HeroSection = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               
-              <Button 
-                variant="outline" 
-                className="border-deep-charcoal text-deep-charcoal hover:bg-deep-charcoal hover:text-cream px-8 py-6 text-lg"
+              <Button
+                variant="outline"
+                className="border-warm-brown text-warm-brown hover:bg-warm-brown hover:text-cream px-8 py-6 text-lg"
               >
                 Our Story
               </Button>
@@ -59,16 +65,16 @@ const HeroSection = () => {
             {/* Impact Stats Preview */}
             <div className="flex flex-wrap gap-8 pt-8">
               <div className="flex items-center space-x-2">
-                <Users className="h-6 w-6 text-coral-blush" />
-                <span className="text-deep-charcoal font-semibold">10,000+ Lives Touched</span>
+                <Users className="h-6 w-6 text-caramel" />
+                <span className="text-warm-brown font-semibold">10,000+ Lives Touched</span>
               </div>
               <div className="flex items-center space-x-2">
-                <GraduationCap className="h-6 w-6 text-strawberry-pink" />
-                <span className="text-deep-charcoal font-semibold">5,000+ Children Educated</span>
+                <GraduationCap className="h-6 w-6 text-golden-cream" />
+                <span className="text-warm-brown font-semibold">5,000+ Children Educated</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Heart className="h-6 w-6 text-strawberry-red" />
-                <span className="text-deep-charcoal font-semibold">₹1 = 1 Day of School</span>
+                <Heart className="h-6 w-6 text-caramel" />
+                <span className="text-warm-brown font-semibold">₹1 = 1 Day of School</span>
               </div>
             </div>
           </div>
@@ -86,7 +92,7 @@ const HeroSection = () => {
               <div className="absolute -bottom-6 -left-6 bg-card p-6 rounded-xl shadow-medium border border-ivory">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-strawberry-red">₹1</div>
-                  <div className="text-sm text-deep-charcoal">Can change a life</div>
+                  <div className="text-sm text-warm-brown">Can change a life</div>
                 </div>
               </div>
             </div>

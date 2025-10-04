@@ -170,19 +170,19 @@ const Donate = () => {
 
                 {/* Payment Methods */}
                 <div>
-                  <label className="text-lg font-semibold text-charcoal-gray mb-4 block">Payment Method</label>
+                  <label className="text-lg font-semibold text-warm-brown mb-4 block">Payment Method</label>
                   <div className="space-y-3">
-                    <div className="flex items-center gap-3 p-3 border border-peach-blush rounded-lg cursor-pointer hover:bg-sage-mist/30 transition-colors">
-                      <CreditCard className="h-5 w-5 text-mauve-purple" />
-                      <span className="text-charcoal-gray">Credit/Debit Card</span>
+                    <div className="flex items-center gap-3 p-3 border border-soft-taupe rounded-lg cursor-pointer hover:bg-warm-beige/30 transition-colors">
+                      <CreditCard className="h-5 w-5 text-caramel" />
+                      <span className="text-warm-brown">Credit/Debit Card</span>
                     </div>
-                    <div className="flex items-center gap-3 p-3 border border-peach-blush rounded-lg cursor-pointer hover:bg-sage-mist/30 transition-colors">
-                      <Smartphone className="h-5 w-5 text-mauve-purple" />
-                      <span className="text-charcoal-gray">UPI/Mobile Wallet</span>
+                    <div className="flex items-center gap-3 p-3 border border-soft-taupe rounded-lg cursor-pointer hover:bg-warm-beige/30 transition-colors">
+                      <Smartphone className="h-5 w-5 text-caramel" />
+                      <span className="text-warm-brown">UPI/Mobile Wallet</span>
                     </div>
-                    <div className="flex items-center gap-3 p-3 border border-peach-blush rounded-lg cursor-pointer hover:bg-sage-mist/30 transition-colors">
-                      <Building className="h-5 w-5 text-mauve-purple" />
-                      <span className="text-charcoal-gray">Net Banking</span>
+                    <div className="flex items-center gap-3 p-3 border border-soft-taupe rounded-lg cursor-pointer hover:bg-warm-beige/30 transition-colors">
+                      <Building className="h-5 w-5 text-caramel" />
+                      <span className="text-warm-brown">Net Banking</span>
                     </div>
                   </div>
                 </div>
@@ -237,7 +237,7 @@ const Donate = () => {
               </Card>
 
               {/* Impact Statistics */}
-              <Card className="bg-gradient-to-br from-mauve-purple to-dusty-rose text-white border-none shadow-elegant">
+              <Card className="bg-gradient-to-br from-caramel to-golden-cream text-warm-brown border-none shadow-elegant">
                 <CardHeader>
                   <CardTitle className="text-2xl font-inter font-bold">
                     Lives Changed So Far
@@ -247,15 +247,15 @@ const Donate = () => {
                   <div className="grid grid-cols-2 gap-4">
                     <div className="text-center">
                       <div className="text-3xl font-bold mb-1">50,000+</div>
-                      <div className="text-white/80 text-sm">People Helped</div>
+                      <div className="text-warm-brown/80 text-sm">People Helped</div>
                     </div>
                     <div className="text-center">
                       <div className="text-3xl font-bold mb-1">100+</div>
-                      <div className="text-white/80 text-sm">Villages</div>
+                      <div className="text-warm-brown/80 text-sm">Villages</div>
                     </div>
                     <div className="text-center">
                       <div className="text-3xl font-bold mb-1">5,000+</div>
-                      <div className="text-white/80 text-sm">Children Educated</div>
+                      <div className="text-warm-brown/80 text-sm">Children Educated</div>
                     </div>
                     <div className="text-center">
                       <div className="text-3xl font-bold mb-1">25,000+</div>

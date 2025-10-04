@@ -1,4 +1,4 @@
-import { Heart, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
@@ -9,8 +9,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <Heart className="h-8 w-8 text-caramel" />
+            <div className="flex items-center space-x-3">
+              <img
+                src="/msct_logo.png"
+                alt="MSCT Logo"
+                className="h-10 w-10 object-contain"
+              />
               <div>
                 <div className="font-playfair text-xl font-bold">Manav Seva</div>
                 <div className="text-sm opacity-75">Charitable Trust</div>
@@ -56,17 +60,33 @@ const Footer = () => {
           <div>
             <h4 className="font-playfair text-lg font-semibold mb-4">Connect With Us</h4>
             <div className="space-y-3">
-              <div className="flex items-center space-x-2 text-cream/80">
-                <Mail className="h-4 w-4" />
-                <span>info@manavseva.org</span>
+              <div className="flex items-start space-x-2 text-cream/80">
+                <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                <span className="text-sm">manavsevacharitabletrust773@gmail.com</span>
               </div>
-              <div className="flex items-center space-x-2 text-cream/80">
-                <Phone className="h-4 w-4" />
-                <span>+91 12345 67890</span>
+              <div className="flex items-start space-x-2 text-cream/80">
+                <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                <div className="text-sm">
+                  <div>+91 79768 92938</div>
+                  <div>+91 97856 92775</div>
+                </div>
               </div>
-              <div className="flex items-center space-x-2 text-cream/80">
-                <MapPin className="h-4 w-4" />
-                <span>New Delhi, India</span>
+              <div className="flex items-start space-x-2 text-cream/80">
+                <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                <div className="text-sm">
+                  <div className="mb-2">
+                    <div className="font-medium text-golden-cream">Main Office:</div>
+                    <div>40, Laxmi Marg, Amal Ka Kanta</div>
+                    <div>Nr. Surajpole Police Station</div>
+                    <div>Udaipur, Rajasthan - 313001</div>
+                  </div>
+                  <div>
+                    <div className="font-medium text-golden-cream">Branch Office:</div>
+                    <div>105, 1st Floor, Jeevan Jyothi Complex</div>
+                    <div>Surajpole, Nr. Udaipur Hotel</div>
+                    <div>Udaipur, Rajasthan</div>
+                  </div>
+                </div>
               </div>
             </div>
 

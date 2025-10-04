@@ -73,19 +73,19 @@ const Programs = () => {
 
   const getCategoryColor = (category: string) => {
     switch(category) {
-      case 'Education': return 'text-sunset-orange';
-      case 'Healthcare': return 'text-mauve-purple';
-      case 'Sustainability': return 'text-sage-green';
-      default: return 'text-charcoal-gray';
+      case 'Education': return 'text-caramel';
+      case 'Healthcare': return 'text-golden-cream';
+      case 'Sustainability': return 'text-warm-beige';
+      default: return 'text-warm-brown';
     }
   };
 
   const getCategoryBg = (category: string) => {
     switch(category) {
-      case 'Education': return 'bg-sunset-orange/10';
-      case 'Healthcare': return 'bg-mauve-purple/10';
-      case 'Sustainability': return 'bg-sage-green/10';
-      default: return 'bg-charcoal-gray/10';
+      case 'Education': return 'bg-caramel/10';
+      case 'Healthcare': return 'bg-golden-cream/10';
+      case 'Sustainability': return 'bg-warm-beige/10';
+      default: return 'bg-warm-brown/10';
     }
   };
 

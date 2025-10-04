@@ -94,13 +94,13 @@ const Blog = () => {
 
   const getCategoryColor = (category: string) => {
     switch(category) {
-      case 'Education': return 'bg-sunset-orange/10 text-sunset-orange';
-      case 'Healthcare': return 'bg-mauve-purple/10 text-mauve-purple';
-      case 'Sustainability': return 'bg-sage-green/10 text-sage-green';
-      case 'Impact Stories': return 'bg-dusty-rose/10 text-dusty-rose';
-      case 'Volunteer Stories': return 'bg-peach-blush/10 text-charcoal-gray';
-      case 'Annual Report': return 'bg-charcoal-gray/10 text-charcoal-gray';
-      default: return 'bg-vanilla-cream/10 text-charcoal-gray';
+      case 'Education': return 'bg-caramel/10 text-caramel';
+      case 'Healthcare': return 'bg-golden-cream/10 text-warm-brown';
+      case 'Sustainability': return 'bg-warm-beige/10 text-warm-brown';
+      case 'Impact Stories': return 'bg-vanilla/10 text-warm-brown';
+      case 'Volunteer Stories': return 'bg-cream/10 text-warm-brown';
+      case 'Annual Report': return 'bg-soft-taupe/10 text-warm-brown';
+      default: return 'bg-vanilla/10 text-warm-brown';
     }
   };
 
@@ -347,9 +347,9 @@ const Blog = () => {
               </Card>
 
               {/* Popular Tags */}
-              <Card className="bg-white border-peach-blush shadow-elegant">
+              <Card className="bg-vanilla border-soft-taupe shadow-elegant">
                 <CardHeader>
-                  <CardTitle className="text-xl font-inter font-bold text-charcoal-gray flex items-center gap-2">
+                  <CardTitle className="text-xl font-inter font-bold text-warm-brown flex items-center gap-2">
                     <Tag className="h-5 w-5" />
                     Popular Tags
                   </CardTitle>
@@ -357,9 +357,9 @@ const Blog = () => {
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
                     {['Education', 'Healthcare', 'Rural Development', 'Volunteers', 'Impact', 'Community', 'Sustainability', 'Charity'].map((tag) => (
-                      <span 
+                      <span
                         key={tag}
-                        className="px-3 py-1 bg-sage-mist text-charcoal-gray text-xs rounded-full cursor-pointer hover:bg-mauve-purple hover:text-white transition-colors"
+                        className="px-3 py-1 bg-warm-beige text-warm-brown text-xs rounded-full cursor-pointer hover:bg-caramel hover:text-cream transition-colors"
                       >
                         #{tag}
                       </span>

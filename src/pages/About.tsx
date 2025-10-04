@@ -125,38 +125,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-20 bg-sage-mist">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-inter font-bold text-charcoal-gray mb-6">Meet Our Team</h2>
-            <p className="text-xl text-charcoal-gray/80 max-w-3xl mx-auto">
-              Passionate individuals dedicated to creating meaningful change in communities
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
-              <Card key={index} className="bg-white border-peach-blush shadow-elegant hover:shadow-strong hover:scale-105 transition-all duration-300 group">
-                <CardHeader className="text-center">
-                  <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
-                    <img 
-                      src={member.image} 
-                      alt={member.name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                    />
-                  </div>
-                  <CardTitle className="text-xl font-inter font-semibold text-charcoal-gray">{member.name}</CardTitle>
-                  <p className="text-mauve-purple font-medium">{member.role}</p>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-charcoal-gray/70 text-center text-sm">{member.bio}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Values Section */}
       <section className="py-20">
@@ -194,12 +163,12 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-mauve-purple to-dusty-rose">
+      <section className="py-20 bg-gradient-to-r from-caramel to-golden-cream">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-inter font-bold text-white mb-6">
+          <h2 className="text-4xl font-inter font-bold text-warm-brown mb-6">
             Join Our Mission
           </h2>
-          <p className="text-xl text-white/90 mb-8">
+          <p className="text-xl text-warm-brown/90 mb-8">
             Every small effort counts. Be part of the change you want to see in the world.
           </p>
           <Button className="donation-button text-lg px-8 py-3">

@@ -1,80 +1,138 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Menu, X, Heart } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'About Us', path: '/about' },
+    { name: '₹1 Revolution', path: '/revolution' },
     { name: 'Our Impact', path: '/impact' },
     { name: 'Blog', path: '/blog' },
+    { name: 'About Us', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];
 
-  return (
-    <nav className="bg-cream border-b border-ivory shadow-soft sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <Heart className="h-8 w-8 text-strawberry-red" />
-            <div className="text-deep-charcoal">
-              <div className="font-playfair text-xl font-bold">Manav Seva</div>
-              <div className="text-xs opacity-75">Charitable Trust</div>
-            </div>
-          </Link>
+  // Handle scroll effect for enhanced glassmorphism
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.path}
-                className="text-deep-charcoal hover:text-strawberry-red transition-colors duration-200 font-medium"
-              >
-                {item.name}
+  return (
+    <nav className={`
+      sticky top-0 z-50 transition-all duration-300 ease-in-out
+      ${isScrolled
+        ? 'bg-cream/80 backdrop-blur-md shadow-medium border-b border-soft-taupe/30'
+        : 'bg-cream/70 backdrop-blur-sm shadow-soft border-b border-soft-taupe/20'
+      }
+    `}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-18 lg:h-20">
+          {/* Left Section - Logo */}
+          <div className="flex items-center flex-shrink-0">
+            <div className="bg-white/30 backdrop-blur-sm rounded-full px-4 py-3 shadow-soft border border-white/20">
+              <Link to="/" className="flex items-center space-x-3 group">
+                <div className="relative">
+                  <img
+                    src="/msct_logo.png"
+                    alt="MSCT Logo"
+                    className="h-10 w-10 object-contain transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-caramel/20 to-golden-cream/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
+                </div>
+                <div className="text-warm-brown">
+                  <div className="font-playfair text-lg lg:text-xl font-bold tracking-tight">Manav Seva</div>
+                  <div className="text-xs opacity-75 font-medium">Charitable Trust</div>
+                </div>
               </Link>
-            ))}
+            </div>
           </div>
 
-          {/* Donate Button */}
-          <div className="hidden md:block">
-            <Button className="donation-button">
-              Donate ₹1 Now
+          {/* Center Section - Desktop Navigation */}
+          <div className="hidden lg:flex items-center justify-center flex-1 max-w-2xl mx-8">
+            <div className="flex items-center space-x-1 bg-white/30 backdrop-blur-sm rounded-full px-6 py-3 shadow-soft border border-white/20">
+              {navItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className={`
+                    relative px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ease-in-out
+                    ${location.pathname === item.path
+                      ? 'text-warm-brown bg-white/60 shadow-soft backdrop-blur-sm'
+                      : 'text-warm-brown/80 hover:text-warm-brown hover:bg-white/40'
+                    }
+                  `}
+                >
+                  {item.name}
+                  {location.pathname === item.path && (
+                    <div className="absolute inset-0 bg-gradient-to-r from-caramel/10 to-golden-cream/10 rounded-full"></div>
+                  )}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Right Section - Donate Button */}
+          <div className="hidden lg:flex items-center flex-shrink-0">
+            <Button className="donation-button relative overflow-hidden group">
+              <span className="relative z-10">Donate ₹1 Now</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-caramel via-golden-cream to-caramel opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </Button>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-deep-charcoal p-2"
+              className="relative p-3 rounded-full bg-white/30 backdrop-blur-sm border border-white/20 text-warm-brown hover:bg-white/40 transition-all duration-300 shadow-soft"
             >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              <div className="relative z-10">
+                {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              </div>
             </button>
           </div>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden pb-4">
-            <div className="flex flex-col space-y-2">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.path}
-                  className="text-deep-charcoal hover:text-strawberry-red transition-colors duration-200 py-2 px-4 rounded"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-              <Button className="donation-button mt-4">
-                Donate ₹1 Now
-              </Button>
+          <div className="lg:hidden">
+            <div className="absolute top-full left-0 right-0 bg-cream/95 backdrop-blur-md border-b border-soft-taupe/30 shadow-medium">
+              <div className="max-w-7xl mx-auto px-4 py-6">
+                <div className="flex flex-col space-y-1">
+                  {navItems.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.path}
+                      className={`
+                        relative px-4 py-3 rounded-lg text-base font-medium transition-all duration-300
+                        ${location.pathname === item.path
+                          ? 'text-warm-brown bg-white/50 shadow-soft'
+                          : 'text-warm-brown/80 hover:text-warm-brown hover:bg-white/30'
+                        }
+                      `}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.name}
+                      {location.pathname === item.path && (
+                        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 bg-gradient-to-b from-caramel to-golden-cream rounded-r-full"></div>
+                      )}
+                    </Link>
+                  ))}
+                  <div className="pt-4 mt-4 border-t border-soft-taupe/20">
+                    <Button className="donation-button w-full">
+                      Donate ₹1 Now
+                    </Button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         )}

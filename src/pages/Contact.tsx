@@ -37,27 +37,35 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: <MapPin className="h-6 w-6" />,
-      title: "Visit Us",
-      details: ["123 Seva Marg, Community Center", "New Delhi - 110001", "India"],
-      color: "text-mauve-purple"
+      title: "Main Office",
+      details: [
+        "40, Laxmi Marg, Amal Ka Kanta",
+        "Nr. Surajpole Police Station",
+        "Udaipur, Rajasthan - 313001"
+      ],
+      color: "text-caramel"
+    },
+    {
+      icon: <MapPin className="h-6 w-6" />,
+      title: "Branch Office",
+      details: [
+        "105, 1st Floor",
+        "Jeevan Jyothi Complex, Surajpole",
+        "Nr. Udaipur Hotel, Udaipur"
+      ],
+      color: "text-golden-cream"
     },
     {
       icon: <Phone className="h-6 w-6" />,
-      title: "Call Us", 
-      details: ["+91 9876543210", "+91 1123456789", "Toll Free: 1800-123-4567"],
-      color: "text-sage-green"
+      title: "Call Us",
+      details: ["+91 79768 92938", "+91 97856 92775", "Available: 9 AM - 6 PM"],
+      color: "text-warm-beige"
     },
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email Us",
-      details: ["info@manavseva.org", "donations@manavseva.org", "volunteer@manavseva.org"],
-      color: "text-sunset-orange"
-    },
-    {
-      icon: <Clock className="h-6 w-6" />,
-      title: "Office Hours",
-      details: ["Monday - Friday: 9:00 AM - 6:00 PM", "Saturday: 10:00 AM - 4:00 PM", "Sunday: Closed"],
-      color: "text-dusty-rose"
+      details: ["manavsevacharitabletrust773@gmail.com", "General Inquiries & Support", "Response within 24 hours"],
+      color: "text-soft-taupe"
     }
   ];
 
@@ -100,6 +108,15 @@ const Contact = () => {
       {/* Contact Information Cards */}
       <section className="py-16 bg-sage-mist">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-inter font-bold text-charcoal-gray mb-4">
+              Our Locations & Contact Details
+            </h2>
+            <p className="text-xl text-charcoal-gray/80 max-w-3xl mx-auto">
+              We have two convenient locations in Udaipur to serve you better
+            </p>
+          </div>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {contactInfo.map((info, index) => (
               <Card key={index} className="bg-white border-peach-blush shadow-elegant hover:shadow-strong hover:scale-105 transition-all duration-300">
@@ -114,7 +131,7 @@ const Contact = () => {
                 <CardContent>
                   <div className="space-y-2">
                     {info.details.map((detail, detailIndex) => (
-                      <p key={detailIndex} className="text-charcoal-gray/70 text-center text-sm">
+                      <p key={detailIndex} className="text-charcoal-gray/70 text-center text-sm leading-relaxed">
                         {detail}
                       </p>
                     ))}
@@ -240,20 +257,23 @@ const Contact = () => {
               <Card className="bg-white border-peach-blush shadow-elegant">
                 <CardHeader>
                   <CardTitle className="text-2xl font-inter font-bold text-charcoal-gray">
-                    Find Our Office
+                    Find Our Offices in Udaipur
                   </CardTitle>
+                  <p className="text-charcoal-gray/70 text-sm">
+                    Both our offices are conveniently located in Udaipur, Rajasthan
+                  </p>
                 </CardHeader>
                 <CardContent className="p-0">
                   <div className="h-64 rounded-b-lg overflow-hidden">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.5535925603157!2d77.22559851508053!3d28.61396998241205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd3696f8e4ed%3A0xf5b8a4c6f8c8c8c8!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1635854400000!5m2!1sen!2sin"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.8!2d73.6821!3d24.5711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e56a0c5b8b8b%3A0x1234567890abcdef!2sSurajpole%2C%20Udaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1635854400000!5m2!1sen!2sin"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="Manav Seva Charitable Trust Office Location"
+                      title="Manav Seva Charitable Trust Office Locations in Udaipur - Surajpole Area"
                     ></iframe>
                   </div>
                 </CardContent>
@@ -286,7 +306,7 @@ const Contact = () => {
               </Card>
 
               {/* Quick Links */}
-              <Card className="bg-gradient-to-br from-mauve-purple to-dusty-rose text-white border-none shadow-elegant">
+              <Card className="bg-gradient-to-br from-caramel to-golden-cream text-warm-brown border-none shadow-elegant">
                 <CardHeader>
                   <CardTitle className="text-2xl font-inter font-bold">
                     Need Immediate Help?
@@ -294,19 +314,23 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <h4 className="font-semibold mb-2">Emergency Helpline</h4>
-                    <p className="text-white/90">Call us 24/7: +91 9876543210</p>
+                    <h4 className="font-semibold mb-2">Primary Contact</h4>
+                    <p className="text-warm-brown/90">+91 79768 92938</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2">Volunteer Support</h4>
-                    <p className="text-white/90">volunteer@manavseva.org</p>
+                    <h4 className="font-semibold mb-2">Alternative Contact</h4>
+                    <p className="text-warm-brown/90">+91 97856 92775</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2">Media Inquiries</h4>
-                    <p className="text-white/90">media@manavseva.org</p>
+                    <h4 className="font-semibold mb-2">Email Support</h4>
+                    <p className="text-warm-brown/90 text-sm">manavsevacharitabletrust773@gmail.com</p>
                   </div>
-                  <Button variant="outline" className="w-full bg-white/10 border-white text-white hover:bg-white/20 mt-4">
-                    View All Contacts
+                  <div>
+                    <h4 className="font-semibold mb-2">Office Hours</h4>
+                    <p className="text-warm-brown/90 text-sm">Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                  </div>
+                  <Button variant="outline" className="w-full bg-warm-brown/10 border-warm-brown text-warm-brown hover:bg-warm-brown/20 mt-4">
+                    Visit Our Office
                   </Button>
                 </CardContent>
               </Card>

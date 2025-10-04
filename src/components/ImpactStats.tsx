@@ -3,52 +3,52 @@ import { GraduationCap, Heart, Stethoscope, Leaf, Users, TrendingUp } from 'luci
 const ImpactStats = () => {
   const stats = [
     {
-      icon: <GraduationCap className="h-8 w-8 text-coral-blush" />,
+      icon: <GraduationCap className="h-8 w-8 text-caramel" />,
       number: "5,000+",
       label: "Children Educated",
       description: "Quality learning opportunities provided",
-      bgColor: "bg-coral-blush/10",
-      borderColor: "border-coral-blush"
+      bgColor: "bg-caramel/10",
+      borderColor: "border-caramel"
     },
     {
-      icon: <Stethoscope className="h-8 w-8 text-strawberry-red" />,
+      icon: <Stethoscope className="h-8 w-8 text-golden-cream" />,
       number: "50,000+",
       label: "Health Consultations",
       description: "Free medical camps & assistance",
-      bgColor: "bg-strawberry-red/10",
-      borderColor: "border-strawberry-red"
+      bgColor: "bg-golden-cream/10",
+      borderColor: "border-golden-cream"
     },
     {
-      icon: <Leaf className="h-8 w-8 text-coral-blush" />,
+      icon: <Leaf className="h-8 w-8 text-warm-beige" />,
       number: "100+",
       label: "Green Projects",
       description: "Environmental conservation initiatives",
-      bgColor: "bg-coral-blush/10",
-      borderColor: "border-coral-blush"
+      bgColor: "bg-warm-beige/10",
+      borderColor: "border-warm-beige"
     },
     {
-      icon: <Users className="h-8 w-8 text-deep-charcoal" />,
+      icon: <Users className="h-8 w-8 text-warm-brown" />,
       number: "10,000+",
       label: "Lives Touched",
       description: "Direct beneficiaries of our programs",
-      bgColor: "bg-deep-charcoal/10",
-      borderColor: "border-deep-charcoal"
+      bgColor: "bg-warm-brown/10",
+      borderColor: "border-warm-brown"
     },
     {
-      icon: <Heart className="h-8 w-8 text-strawberry-red" />,
+      icon: <Heart className="h-8 w-8 text-caramel" />,
       number: "₹1,00,000+",
       label: "₹1 Donations",
       description: "Collective micro-donations received",
-      bgColor: "bg-strawberry-pink/10",
-      borderColor: "border-strawberry-pink"
+      bgColor: "bg-vanilla/10",
+      borderColor: "border-vanilla"
     },
     {
-      icon: <TrendingUp className="h-8 w-8 text-strawberry-pink" />,
+      icon: <TrendingUp className="h-8 w-8 text-soft-taupe" />,
       number: "95%",
       label: "Impact Rate",
       description: "Funds directly reaching beneficiaries",
-      bgColor: "bg-strawberry-pink/10",
-      borderColor: "border-strawberry-pink"
+      bgColor: "bg-soft-taupe/10",
+      borderColor: "border-soft-taupe"
     }
   ];
 
