@@ -50,7 +50,7 @@ const HeroSection = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="donation-button text-lg px-8 py-6">
-                Donate Now
+                Make your impact
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               
