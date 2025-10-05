@@ -89,11 +89,43 @@ const RupeeRevolutionSection = () => {
               </p>
             </div>
 
-            <div className="space-y-4">
-              <Button className="w-full donation-button text-lg py-6">
-                Donate ₹1 Now
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+            <div className="space-y-6">
+              {/* QR Code Payment Option */}
+              <div className="bg-sage-green/10 rounded-xl p-6 border border-sage-green/20">
+                <h4 className="text-lg font-semibold text-deep-indigo mb-3 text-center">
+                  Scan QR Code to Donate
+                </h4>
+                <div className="flex justify-center mb-3">
+                  <div className="bg-white p-4 rounded-lg shadow-soft">
+                    <img
+                      src="/qr-code-donation.png"
+                      alt="UPI QR Code for ₹1 donation to manavseva2025@sbi"
+                      className="w-48 h-48 object-contain"
+                    />
+                  </div>
+                </div>
+                <p className="text-sm text-deep-indigo/70 text-center">
+                  UPI ID: <span className="font-mono font-semibold">manavseva2025@sbi</span>
+                </p>
+              </div>
+
+              {/* Divider */}
+              <div className="flex items-center gap-3">
+                <div className="flex-1 h-px bg-ivory"></div>
+                <span className="text-sm text-deep-indigo/60 font-medium">OR</span>
+                <div className="flex-1 h-px bg-ivory"></div>
+              </div>
+
+              {/* Direct UPI Link Button */}
+              <a
+                href="upi://pay?pa=manavseva2025@sbi&pn=ManavSevaCharitableTrust&am=1&cu=INR"
+                className="block"
+              >
+                <Button className="w-full donation-button text-lg py-6">
+                  Donate ₹1 Now
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
               
               <div className="text-center">
                 <p className="text-sm text-deep-indigo/60">
