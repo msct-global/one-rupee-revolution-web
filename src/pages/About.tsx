@@ -52,7 +52,7 @@ const About = () => {
               Our Journey to <span className="text-mauve-purple">Change Lives</span>
             </h1>
             <p className="text-xl text-charcoal-gray/80 max-w-3xl mx-auto leading-relaxed">
-              Founded on the belief that service to humanity is service to God, we've been 
+              Founded on the belief that small donations could create big 'Miracles', we've been 
               transforming communities through compassion, integrity, and unwavering dedication.
             </p>
           </div>

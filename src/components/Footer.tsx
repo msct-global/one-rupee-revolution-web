@@ -21,7 +21,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-cream/80 leading-relaxed">
-              Service to humanity is service to God. Join us in creating lasting change 
+              Making Difference Possible. Join us in creating lasting change 
               through education, healthcare, and sustainability initiatives.
             </p>
             <div className="bg-caramel/20 p-4 rounded-lg">
