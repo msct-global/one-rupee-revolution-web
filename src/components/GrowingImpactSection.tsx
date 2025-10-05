@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { GraduationCap, Heart, Stethoscope, Leaf, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
 
 const GrowingImpactSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -130,14 +132,16 @@ const GrowingImpactSection = () => {
 
           {/* Bottom CTA with Pulse Animation */}
           <div className="text-center mt-16">
-            <button 
-              className={`donation-button text-lg px-12 py-6 ${
-                animationStage >= 3 ? 'animate-[pulse-glow_3s_ease-in-out_infinite]' : ''
-              }`}
-            >
-              Join the ₹1 Revolution
-              <Heart className="ml-2 h-5 w-5" />
-            </button>
+            <Link to="/revolution">
+              <Button 
+                className={`donation-button text-lg px-12 py-6 ${
+                  animationStage >= 3 ? 'animate-[pulse-glow_3s_ease-in-out_infinite]' : ''
+                }`}
+              >
+                Join the ₹1 Revolution
+                <Heart className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
             <p className="text-deep-indigo/60 mt-4">
               Small donations. Big dreams. Lasting change.
             </p>

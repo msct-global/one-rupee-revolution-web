@@ -83,7 +83,7 @@ const Navigation = () => {
           {/* Right Section - Donate Button */}
           <div className="hidden lg:flex items-center flex-shrink-0">
             <Button className="donation-button relative overflow-hidden group">
-              <span className="relative z-10">Donate ₹1 Now</span>
+              <span className="relative z-10">Donate Now</span>
               <div className="absolute inset-0 bg-gradient-to-r from-caramel via-golden-cream to-caramel opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </Button>
           </div>
@@ -128,7 +128,7 @@ const Navigation = () => {
                   ))}
                   <div className="pt-4 mt-4 border-t border-soft-taupe/20">
                     <Button className="donation-button w-full">
-                      Donate ₹1 Now
+                      Donate Now
                     </Button>
                   </div>
                 </div>

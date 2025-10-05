@@ -27,7 +27,7 @@ const Footer = () => {
             <div className="bg-caramel/20 p-4 rounded-lg">
               <p className="font-semibold text-golden-cream mb-2">Join the ₹1 Revolution</p>
               <Button className="donation-button w-full">
-                Donate ₹1 Now
+                Donate Now
               </Button>
             </div>
           </div>
