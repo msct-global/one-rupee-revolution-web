@@ -96,9 +96,9 @@ const RupeeRevolutionSection = () => {
                   Scan QR Code to Donate
                 </h4>
                 <div className="flex justify-center mb-3">
-                  <div className="bg-white p-4 rounded-lg shadow-soft">
+                  <div className="bg-white p-2 rounded-lg shadow-soft">
                     <img
-                      src="/qr-code-donation.png"
+                      src="/donate1.jpg"
                       alt="UPI QR Code for ₹1 donation to manavseva2025@sbi"
                       className="w-48 h-48 object-contain"
                     />
