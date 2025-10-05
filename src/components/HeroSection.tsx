@@ -58,7 +58,7 @@ const HeroSection = () => {
                 variant="outline"
                 className="border-warm-brown text-warm-brown hover:bg-warm-brown hover:text-cream px-8 py-6 text-lg"
               >
-                Make Your Impact
+                Our Story
               </Button>
             </div>
 
